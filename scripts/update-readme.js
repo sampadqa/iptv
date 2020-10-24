@@ -21,7 +21,7 @@ function main() {
 }
 
 function parseIndex() {
-  const root = helper.parsePlaylist('index.m3u')
+  const root = helper.parsePlaylist('myindex.m3u')
 
   let countries = {}
   let languages = {}
