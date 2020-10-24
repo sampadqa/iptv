@@ -44,7 +44,7 @@ function createNoJekyllFile() {
 }
 
 function parseIndex() {
-  const root = helper.parsePlaylist('index.m3u')
+  const root = helper.parsePlaylist('myindex.m3u')
 
   let countries = {}
   let languages = {}
@@ -92,7 +92,7 @@ function parseIndex() {
 }
 
 function generateIndex() {
-  const filename = `${ROOT_DIR}/index.m3u`
+  const filename = `${ROOT_DIR}/myindex.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['title', 'url'])
