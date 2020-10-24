@@ -18,7 +18,7 @@ let stats = {
 
 async function test() {
 
-  const playlist = helper.parsePlaylist('index.m3u')
+  const playlist = helper.parsePlaylist('myindex.m3u')
   
   const countries = helper.filterPlaylists(playlist.items, config.country, config.exclude)
 
