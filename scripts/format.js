@@ -47,7 +47,7 @@ async function main() {
 }
 
 function parseIndex() {
-  const playlist = helper.parsePlaylist('index.m3u')
+  const playlist = helper.parsePlaylist('myindex.m3u')
   playlist.items = helper.filterPlaylists(playlist.items, config.country, config.exclude)
 
   console.log(`Found ${playlist.items.length} playlist(s)`)
